@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.image_reveal {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: clip;
+}
+
+ul {
+    list-style: none;
+    border: 1px solid white;
+}
+
+li {
+    width: 600px;
+    padding: 20px 0;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid white;
+    }
+}
+
+.hovered_img {
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity 200ms ease-in-out;
+}
